@@ -1,13 +1,12 @@
 import React from "react";
 
+import Navbar from "components/Navbar";
 class Portal extends React.Component {
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <h1>Portal</h1>
-        </div>
-      </div>
+      <>
+        <Navbar name="React-Core" />
+      </>
     );
   }
 }
