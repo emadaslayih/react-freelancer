@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 
-//global css
 // global css
 import "normalize.css";
 import "bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-
+import "./components/style/Main.scss";
 import Portal from "./Portal.js";
 
 ReactDOM.render(
