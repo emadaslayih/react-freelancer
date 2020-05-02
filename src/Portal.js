@@ -1,11 +1,11 @@
 import React from "react";
 
-import Navbar from "components/Navbar";
+import MainNav from "components/MainNav";
 class Portal extends React.Component {
   render() {
     return (
       <>
-        <Navbar name="React-Core" btnText="Sign in" />
+        <MainNav />
       </>
     );
   }
