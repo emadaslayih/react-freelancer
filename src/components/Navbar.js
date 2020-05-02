@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Button } from "react-bootstrap";
 
 export default (props) => {
   return (
@@ -9,15 +9,7 @@ export default (props) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="">Action</NavDropdown.Item>
-            <NavDropdown.Item href="">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="">Separated link</NavDropdown.Item>
-          </NavDropdown>
-          <Nav.Link href="#link">Link</Nav.Link>
+          <Button>{props.btnText}</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

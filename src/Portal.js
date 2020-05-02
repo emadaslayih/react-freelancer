@@ -5,7 +5,7 @@ class Portal extends React.Component {
   render() {
     return (
       <>
-        <Navbar name="React-Core" />
+        <Navbar name="React-Core" btnText="Sign in" />
       </>
     );
   }
