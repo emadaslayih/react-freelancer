@@ -32,21 +32,15 @@ body {
 }
 
 /*Features*/
-.features{
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
- .col-lg-4 .items{
+ .col-lg-4 .feature{
   max-width:20rem;
 }
 
 .features i{
   font-size: 70px;
-  padding: 40px 0;
 }
 
-.features i:hover{
+.feature:hover i{
   transform: scale(1.1, 1.1);
   transition: .2s ease-in-out;
 }
