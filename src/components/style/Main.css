@@ -2,8 +2,9 @@ body {
   font-family: "Regular", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
 }
-
+/*navbar*/
 .navbar {
   padding: 9px 12px 9px 0;
   text-transform: capitalize;
@@ -29,6 +30,37 @@ body {
   background: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/bg-masthead.jpg');
   background-size: cover;
 }
+
+/*Features*/
+ .col-lg-4 .feature{
+  max-width:20rem;
+}
+
+.features i{
+  font-size: 70px;
+}
+
+.feature:hover i{
+  transform: scale(1.1, 1.1);
+  transition: .2s ease-in-out;
+}
+
+.features p{
+  font-weight: 300;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 767px) {
   #masthead {
