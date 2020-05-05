@@ -101,12 +101,21 @@ body {
 }
 /*End of Details*/
 
+/*testimonial*/
+.testimonial .rounded-circle{
+  max-width: 12rem;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}
 
+.testimonial h5{
+  text-transform: capitalize;
+}
 
-
-
-
-
+.testimonial p{
+  font-weight: 300;
+  color: #212529;
+}
+/*End of Testimonial*/
 
 
 

@@ -4,6 +4,7 @@ import MainNav from "components/MainNav";
 import Masthead from "./components/Masthead";
 import Features from "./components/Features";
 import Details from "./components/Details";
+import Testimonial from "./components/Testimonial";
 class Portal extends React.Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class Portal extends React.Component {
         <Masthead />
         <Features/>
         <Details/>
+        <Testimonial/>
       </div>
     );
   }
