@@ -83,7 +83,6 @@ body {
   text-transform: capitalize;
 }
 .details .img-side{
-  background:url("./assets/bg-details-1.jpg") ;
   background-size: cover;
   min-height: 30rem;
 }
