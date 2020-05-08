@@ -9,7 +9,7 @@ class MainNav extends React.Component{
 			<div className="container">
 			   <div className="navbar">
 					<div className="logo">
-						<a href="#">react core</a>
+						<a href="/">react core</a>
 					</div>
 					<div className="sign-in ml-auto">
 						<Button>sign in</Button>

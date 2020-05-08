@@ -4,8 +4,6 @@ import SearchBar from "./SearchBar";
 
 class Footer extends React.Component{
 
-    //here is the search result
-    //  hoping that it's dynamic now :)
     onSearchSubmit(term) {
         console.log(term)
     }
