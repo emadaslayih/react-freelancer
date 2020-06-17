@@ -9,11 +9,11 @@ import Portal from "./Portal.js";
 import "normalize.css";
 import "bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import "./components/style/Main.css";
+import "./components/style/Main.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portal />
+    <Portal />    
   </React.StrictMode>,
   document.getElementById("root")
 );

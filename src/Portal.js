@@ -1,26 +1,13 @@
 import React from "react";
+import {Router,Route,Switch} from 'react-router-dom';
 
-import MainNav from "components/MainNav";
-import Masthead from "./components/Masthead";
-import Features from "./components/Features";
-import Details from "./components/Details";
-import Testimonial from "./components/Testimonial";
-import Footer from "./components/Footer";
-class Portal extends React.Component {
+import Navbar from "./components/navbar.js";
 
+export default (props) => {
+    return  (
+        <div className="container-fluid px-0">
+            <Navbar/>   
+        </div>
+    )   
 
-  render() {
-    return (
-      <div id="react-core">
-        <MainNav />
-        <Masthead />
-        <Features/>
-        <Details/>
-        <Testimonial/>
-        <Footer/>
-      </div>
-    );
-  }
 }
-
-export default Portal;
