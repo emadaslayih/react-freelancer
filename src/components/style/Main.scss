@@ -1,20 +1,24 @@
 .navbar
 {
-    a{
+    a
+    {
         padding: 0 13px;
         margin-right: 12px; 
         text-transform: capitalize;
         text-decoration: none; 
         color: #000;
-    }
-    a:hover{
+
+        &:hover{
         transition: .2s ease-in-out;
         color: #007fed;
     }
+    }
+    
 
     .rhs
     {    
-        .post{
+        .post
+        {
             background-color: #ff8100;
             padding: 7px 12px;
             text-transform: none;
@@ -23,11 +27,12 @@
             font-weight: 600;
             margin:0 8px 0 20px;
             
+            &:hover{
+                background-color: #ee7700;
+                transition: .2s ease-in-out;
+    
+            }
         }
-        .post:hover{
-            background-color: #ee7700;
-            transition: .2s ease-in-out;
 
-        }
     }
 }
