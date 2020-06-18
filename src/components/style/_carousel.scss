@@ -1,0 +1,125 @@
+.carousel-item
+{ height: 650px;
+
+    &:nth-child(1){
+    background: url("./img/slide1.jpeg") center;
+    background-size: cover;
+}
+&:nth-child(2){
+    background: url("./img/slide2.jpeg") center;
+    background-size: cover;
+}
+&:nth-child(3){
+    background: url("./img/slide3.jpeg") center ;
+    background-size: cover;
+    }
+&:nth-child(4){
+    background: url("./img/slide4.jpeg") center;
+    background-size: cover;
+}
+}
+.overlay{
+   background-color: rgba(0,0,0,0.7);
+    height: 650px;        
+ }
+        
+ .carousel-control-next 
+ ,.carousel-control-prev 
+ ,.carousel-indicators {
+     display: none;
+ }
+
+ .carousel-caption{
+     text-align: right;
+     bottom: 10px;
+     right: 30px;
+     @media (max-width:768px){
+         bottom: 42%;
+         text-align: left;
+         left:  20px;
+     }
+     @media (max-width:600px){
+         display: none;
+     }
+     p{
+         font-size: 20px;
+         font-weight: 700;
+         @media (max-width:768px){
+
+         font-size: 18px;
+         font-weight: 400;
+         }
+     }
+ }
+ .header
+ {
+     position: absolute;
+     z-index: 10;
+     color: #fff;
+    max-width: 100%;
+    padding-left: 20px; ;
+    padding-right: 30px;
+    padding-top: 30px;
+    @media (min-width: 768px) {
+        max-width: 76%;
+        padding-left: 10px; 
+        padding-top: 50px;
+
+          }
+    @media (min-width: 992px) {
+        max-width: 63%;
+        padding-left: 50px; 
+        padding-top: 150px;
+        
+         }
+    
+    h1{
+        font-size: 48px;
+        line-height: 1.17;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 50px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 30px;
+        background: rgba(0,0,0,0.1);
+        border: 1px #fff solid;
+        text-transform: capitalize;;
+        &:hover{
+            background-color:rgba(255,255,255,0.1);
+            transition: .2s ease-in-out;
+        }
+        @media (max-width:768px){
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 17px;    
+        }
+    }
+      .one{
+            margin-right: 15px;
+            background-color: #fc008c;
+            border: 1px solid #fc008c;
+            text-transform: none;
+            &:hover{
+                background-color: #d80077;
+            }
+            @media (max-width:768px){
+            margin-top: 150px;
+            }
+        }
+
+    
+
+ }
+
+
+
