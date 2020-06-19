@@ -4,7 +4,7 @@ import{Image} from "react-bootstrap";
 
 const AsUsedBy =()=>{
     return(
-    <div className="container px-0 mx-0">
+    <div className="container used-by px-0 mx-0">
         <div className="row main-row m-0">
             <div className=" column-1 text-center ">
               <span>As used by</span>
