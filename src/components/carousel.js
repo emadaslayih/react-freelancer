@@ -4,7 +4,7 @@ import {Carousel} from "react-bootstrap";
 class carousel extends React.Component{
     render(){
         return (
-            <div title="Hier Freelancer & Find Freelancer Jobs Online">
+            <div>
                 <div className="header">
                 <h1> Hire the best freelancers for any job, online. </h1>
                 <p>Millions of people use freelancer.com to turn their ideas into reality.</p>
@@ -15,21 +15,21 @@ class carousel extends React.Component{
                 <Carousel.Item>
                     <div className="overlay">  
                         <Carousel.Caption>
-                        <p >This radiation shield design for NASA cost $500 USD and took 15 days</p>
+                        <p>This radiation shield design for NASA cost $500 USD and took 15 days</p>
                         </Carousel.Caption>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="overlay">
                             <Carousel.Caption>
-                            <p > This illustration cost $100 USD and took 5 days </p>
+                            <p> This illustration cost $100 USD and took 5 days </p>
                             </Carousel.Caption>
                         </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="overlay">
                             <Carousel.Caption>
-                            <p > This radiation shield design for NASA cost $500 USD and took 15 days </p>
+                            <p> This radiation shield design for NASA cost $500 USD and took 15 days </p>
                             </Carousel.Caption>
                         </div>
                 </Carousel.Item>
