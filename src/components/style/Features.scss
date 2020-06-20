@@ -1,0 +1,43 @@
+.features {
+    @media (min-width: 1200px){
+    max-width: 1200px;
+    }
+    @media (max-width: 1200px){
+        max-width: 100%;
+    }
+
+    h2
+    {
+        font-weight: 700;
+        margin-bottom: 48px;
+        @media (max-width:768px) {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    h3
+    {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        @media (max-width:768px) {
+            font-size: 16px;
+        }
+    }
+    p
+        {   font-size: 20px;
+            line-height: 1.4;
+            @media (max-width:768px) {
+                font-size: 16px;
+            }
+        }
+    img{
+        margin-right: 16px;
+        margin-bottom: 16px;
+
+    }
+    .col-md-6{
+        margin-bottom: 24px;
+    }
+
+}    
