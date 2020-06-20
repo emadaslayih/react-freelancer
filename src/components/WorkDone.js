@@ -15,7 +15,7 @@ const step=[
         img:"work3.jpg" ,
         title: "Pay safely",
         desc: "With secure payments and thousands of reviewed professionals to choose from, Freelancer.com is the simplest and safest way to get work done online."
-    }
+    } 
 ]
 
 const WorkDone =()=>{
@@ -23,9 +23,9 @@ const WorkDone =()=>{
             <h2>Need work done?</h2>
             <div className="row">
                 {
-                    step.map(step => {
+                    step.map((step,i) => {
                         return(
-                            <div className="col-md-4">
+                            <div key={i} className="col-md-4">
                                 <Image className=" rounded-circle w-100" src={step.img}/>
                                 <h3>{step.title}</h3>
                                 <p>{step.desc}</p>

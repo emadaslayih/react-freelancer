@@ -13,7 +13,7 @@ import "./components/style/Main.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portal />    
+    <Portal/>    
   </React.StrictMode>,
   document.getElementById("root")
 );
