@@ -18,6 +18,7 @@
     
     .row{
         justify-content: space-between;
+        display: block;
         @media (min-width: 768px){
             justify-content: space-around;
         }
@@ -45,6 +46,8 @@
         @media (max-width: 768px){
             display: inline-block;
             width: 300px;
+            margin:20px; 
+
         }
         h3{
             font-size: 20px;
