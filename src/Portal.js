@@ -6,6 +6,7 @@ import AsUsedBy from "./components/AsUsedBy.js"
 import WorkDone from "./components/WorkDone.js"
 import Features from "./components/Features.js"
 import Projects from "./components/CrowdFavourites"
+import Cat from "./components/Categories"
 export default (props) => {
     return  (
         <div className="container-fluid px-0" title="Hier Freelancer & Find Freelancer Jobs Online">
@@ -15,6 +16,7 @@ export default (props) => {
             <WorkDone/> 
             <Features/> 
             <Projects/> 
+            <Cat/>
         </div>
     )   
 
