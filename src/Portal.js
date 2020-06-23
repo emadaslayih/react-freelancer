@@ -5,6 +5,7 @@ import Carousel from "./components/carousel.js"
 import AsUsedBy from "./components/AsUsedBy.js"
 import WorkDone from "./components/WorkDone.js"
 import Features from "./components/Features.js"
+import Projects from "./components/CrowdFavourites"
 export default (props) => {
     return  (
         <div className="container-fluid px-0" title="Hier Freelancer & Find Freelancer Jobs Online">
@@ -12,7 +13,8 @@ export default (props) => {
             <Carousel/>
             <AsUsedBy/>
             <WorkDone/> 
-            <Features/>  
+            <Features/> 
+            <Projects/> 
         </div>
     )   
 
