@@ -148,7 +148,7 @@ const TopJobs=()=>{
                     job.map((job,i)=>{
                         return(
                             <div key={i} className="job">
-                                <i class="fas fa-caret-right"></i>
+                                <i className="fas fa-caret-right"></i>
                                 <a href="/">{job.name}</a>
                             </div>
                         );

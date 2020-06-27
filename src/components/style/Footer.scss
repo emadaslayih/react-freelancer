@@ -1,0 +1,144 @@
+.footer
+{
+
+    color: white;
+    background-color: #171b2d;
+
+    .container
+    {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 14px;
+
+        @media (min-width: 1200px){
+            max-width: 1200px;
+        }
+
+        @media (max-width: 1200px){
+            max-width: 100%;
+        }
+    }
+    .upper-footer{
+
+        .link {
+            margin-bottom: 16px;
+            i{
+                margin-right: 12px;
+                font-size: 19px;
+            }
+            @media (max-width: 768px){
+                border-top: 1px solid #2b3340;
+                padding-top: 20px;        
+            }
+        }
+        
+        img{
+            margin-bottom: 20px;
+        }
+        .social{
+            i{
+                font-size: 20px;
+            }
+            a{
+                .fa-facebook{
+                    &:hover {
+                        color: #1877f2;
+                        transition: .2s ease-in-out;
+                    }
+                }
+                .fa-twitter{
+                    &:hover {
+                        color: #00b6f1;                    
+                        transition: .2s ease-in-out;
+                    }
+                }
+                .fa-youtube{
+                    &:hover {
+                        color: red;                    
+                        transition: .2s ease-in-out;
+                    }
+                }
+                .fa-instagram{
+                    &:hover {
+                        color: #c32aa3;
+                        transition: .2s ease-in-out;
+                    }
+                }
+            }
+        }
+    .col-md-3{
+        .row{
+            max-width: 500px;
+        }
+        @media (max-width: 768px){
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #2b3340;        
+        }
+    }
+    
+    
+    .col-lg-4 {
+        @media (max-width: 768px){
+            border-bottom: 1px solid #2b3340;        
+        }
+    
+    }
+    
+        h5{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 12px;
+    
+        }
+        a{
+            color: #f7f7f7;
+        }
+    
+        li
+        {
+            margin-bottom: 4px;
+            a{
+                color: #bec0c2;
+    
+                &:hover{
+                    color: #f7f7f7;
+                }
+            }
+        }
+    }
+    
+
+
+    .lower-footer
+    {
+        padding-top: 32px;   
+        p{
+            font-size: 11px;
+            margin-bottom: 0;
+            
+        }
+        span{
+            display: block;
+            font-size: 13px;
+        }
+        .num{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        @media (min-width: 768px){
+            border-top: 1px solid #2b3340;        
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
