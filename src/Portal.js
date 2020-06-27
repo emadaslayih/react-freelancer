@@ -7,6 +7,7 @@ import WorkDone from "./components/WorkDone"
 import Features from "./components/Features"
 import Projects from "./components/CrowdFavourites"
 import Cat from "./components/Categories"
+import TopJobs from "./components/TopJobs"
 import FreelancerCards from "./components/FreelancerCards";
 export default (props) => {
     return  (
@@ -18,6 +19,7 @@ export default (props) => {
             <Features/> 
             <Projects/> 
             <Cat/>
+            <TopJobs/>
             <FreelancerCards/>
         </div>
     )   
