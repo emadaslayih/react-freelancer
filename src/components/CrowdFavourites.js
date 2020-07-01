@@ -6,37 +6,37 @@ const cards=[
         img:"work2.jpg" ,
         title:"Website Development",
         desc: "From $300 USD",
-        lable:"post a project like this"
+        lable:"Post a project like this"
     },
     {
         img:"work2.jpg" ,
         title:"Graphic design",
         desc: "From $100 USD",
-        lable:"post a project like this"
+        lable:"Post a project like this"
     },
     {
         img:"work2.jpg" ,
         title:"Logo Design",
         desc: "From $50 USD",
-        lable:"post a contest like this"
+        lable:"Post a contest like this"
     },
     {
         img:"work2.jpg" ,
         title:"Marketing",
         desc: "From $150 USD",
-        lable:"post a project like this"
+        lable:"Post a project like this"
     },
     {
         img:"work2.jpg" ,
         title:"Writing",
         desc: "From $50 USD",
-        lable:"post a project like this"
+        lable:"Post a project like this"
     },
     {
         img:"work2.jpg" ,
         title:"Mobile App",
         desc: "From $50 USD/hour",
-        lable:"post a project like this"
+        lable:"Post a project like this"
     }
 ]
 
