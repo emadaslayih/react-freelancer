@@ -1,7 +1,15 @@
 import React from "react";
 import {Carousel} from "react-bootstrap";
+import {connect} from "react-redux";
+import {fetchCarousel} from "../actions"
 
 class carousel extends React.Component{
+
+
+    componentDidMount(){
+        this.props.fetchCarousel();
+    }
+
     render(){
         return (
             <div>
@@ -13,7 +21,7 @@ class carousel extends React.Component{
                 </div>
                 <Carousel fade="true" >
                 <Carousel.Item>
-                    <div className="overlay">  
+                    <div className="overlay"style={{color: "red"}}>  
                         <Carousel.Caption>
                         <p>This radiation shield design for NASA cost $500 USD and took 15 days</p>
                         </Carousel.Caption>
@@ -49,4 +57,4 @@ class carousel extends React.Component{
     }
 }
 
-export default carousel;
+export default connect (null,{fetchCarousel}) (carousel);

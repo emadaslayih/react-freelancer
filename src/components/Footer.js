@@ -96,7 +96,7 @@ const Footer =()=>{
                         <span className="num">18,067,307</span>
                         <span>Total Jobs Posted</span>     
                     </div>
-                    <div className="col-lg-6 mt-md-4 mt-0">
+                    <div className="col-lg-6 mt-md-4 mt-0 mt-lg-0">
                         <p>Freelancer &copy; is a registered Trademark of Freelancer Technology Pty Limited (ACN 141 959 042)</p>
                         <p>Copyright &copy; 2020 Freelancer Technology Pty Limited (ACN 141 959 042)</p>
                     </div>

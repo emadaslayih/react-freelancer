@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-
+import {createStore ,applyMiddleware,compose} from "redux";
+import {Provider} from "react-redux";
+import reduxThunk from "redux-thunk";
+import reducers from './reducers';
 import Portal from "./Portal.js";
 
 
@@ -11,10 +14,16 @@ import "bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "./components/style/Main.scss";
 
+
+const composeEnhancers=window.__REDUX_DEVTOOLS_EXTENTION_COMPOSE__|| compose;
+const store=createStore(reducers,composeEnhancers(applyMiddleware(reduxThunk)));
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Portal/>    
-  </React.StrictMode>,
+
+    <Provider store={store}>
+      <Portal/>   
+    </Provider> 
+,
   document.getElementById("root")
 );
 
