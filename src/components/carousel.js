@@ -4,10 +4,10 @@ import {connect} from "react-redux";
 import {fetchCarousel} from "../actions"
 
 class carousel extends React.Component{
-
-
+    
     componentDidMount(){
         this.props.fetchCarousel();
+        console.log(this.props.fetchCarousel())
     }
 
     render(){
@@ -20,44 +20,20 @@ class carousel extends React.Component{
                 <a className="two" href="/">Earn money freelancing</a>
                 </div>
                 <Carousel fade="true" >
-                <Carousel.Item>
-                    <div className="overlay"style={{color: "red"}}>  
-                        <Carousel.Caption>
-                        <p>This radiation shield design for NASA cost $500 USD and took 15 days</p>
-                        </Carousel.Caption>
-                    </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className="overlay">
-                            <Carousel.Caption>
-                            <p> This illustration cost $100 USD and took 5 days </p>
-                            </Carousel.Caption>
-                        </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className="overlay">
-                            <Carousel.Caption>
-                            <p> This radiation shield design for NASA cost $500 USD and took 15 days </p>
-                            </Carousel.Caption>
-                        </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className="overlay">
-                            <Carousel.Caption>
-                            <p>This illustration cost $100 USD and took 5 days </p>
-                            </Carousel.Caption>
-                        </div>
-                </Carousel.Item>
-            </Carousel>
-            {/* Sample shows what should the method for printing data retrieved from the database to be!!  
-            {
-                this.props.carouselImages.map((image) => {
-                    return (
-                        <img src={image.image} />
-                    )
+                { 
+                this.props.carouselImages.map((item,id)=>{
+                    return(
+                        <Carousel.Item key={id} style={{background: `url(${item.image}) center` , backgroundSize:"cover"}}>
+                            <div className="overlay">  
+                                <Carousel.Caption>
+                                    <p>{item.details}</p>
+                                </Carousel.Caption>
+                            </div>
+                        </Carousel.Item>
+                    );
                 })
-            }
-            */}
+                }
+            </Carousel>
             </div>
             )
     }

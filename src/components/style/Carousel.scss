@@ -1,23 +1,5 @@
 .carousel-item
 { height: 650px;
-    
-
-    &:nth-child(1){
-    background: url("./img/slide1.jpeg") center;
-    background-size: cover;
-}
-&:nth-child(2){
-    background: url("./img/slide2.jpeg") center;
-    background-size: cover;
-}
-&:nth-child(3){
-    background: url("./img/slide3.jpeg") center ;
-    background-size: cover;
-    }
-&:nth-child(4){
-    background: url("./img/slide4.jpeg") center;
-    background-size: cover;
-}
 }
 .overlay{
    background-color: rgba(0,0,0,0.7);
