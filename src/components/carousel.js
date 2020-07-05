@@ -49,12 +49,25 @@ class carousel extends React.Component{
                         </div>
                 </Carousel.Item>
             </Carousel>
-
+            {/* Sample shows what should the method for printing data retrieved from the database to be!!  
+            {
+                this.props.carouselImages.map((image) => {
+                    return (
+                        <img src={image.image} />
+                    )
+                })
+            }
+            */}
             </div>
-            
-        
             )
     }
 }
 
-export default connect (null,{fetchCarousel}) (carousel);
+const mapStateToProps = (state) => {
+    console.log(state)
+    return {
+        carouselImages: state.carousel,
+    }
+}
+
+export default connect (mapStateToProps, {fetchCarousel}) (carousel);

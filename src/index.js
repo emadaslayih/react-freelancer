@@ -4,7 +4,7 @@ import * as serviceWorker from "./serviceWorker";
 import {createStore ,applyMiddleware,compose} from "redux";
 import {Provider} from "react-redux";
 import reduxThunk from "redux-thunk";
-import reducers from './reducers';
+import reducer from './reducers';
 import Portal from "./Portal.js";
 
 
@@ -16,7 +16,9 @@ import "./components/style/Main.scss";
 
 
 const composeEnhancers=window.__REDUX_DEVTOOLS_EXTENTION_COMPOSE__|| compose;
-const store=createStore(reducers,composeEnhancers(applyMiddleware(reduxThunk)));
+const store= createStore(
+  reducer, composeEnhancers(applyMiddleware(reduxThunk))
+);
 
 ReactDOM.render(
 
