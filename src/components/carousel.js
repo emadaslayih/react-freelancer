@@ -7,7 +7,6 @@ class carousel extends React.Component{
     
     componentDidMount(){
         this.props.fetchCarousel();
-        console.log(this.props.fetchCarousel())
     }
 
     render(){
@@ -40,7 +39,6 @@ class carousel extends React.Component{
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return {
         carouselImages: state.carousel,
     }
