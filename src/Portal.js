@@ -1,15 +1,27 @@
 import React from "react";
-
-class Portal extends React.Component {
-  render() {
-    return (
-      <div className="container-fluid">
-        <div className="row">
-          <h1>Portal</h1>
+import Navbar from "./components/navbar";
+import Carousel from "./components/carousel";
+import AsUsedBy from "./components/AsUsedBy";
+import WorkDone from "./components/WorkDone";
+import Features from "./components/Features";
+import Projects from "./components/CrowdFavourites";
+import Cat from "./components/Categories";
+import TopJobs from "./components/TopJobs";
+import FreelancerCards from "./components/FreelancerCards";
+import Footer from "./components/Footer"
+export default (props) => {
+    return  (
+        <div className="container-fluid px-0" title="Hier Freelancer & Find Freelancer Jobs Online">
+            <Navbar/>
+            <Carousel/>
+            <AsUsedBy/>
+            <WorkDone/> 
+            <Features/> 
+            <Projects/> 
+            <Cat/>
+            <FreelancerCards/>
+            <TopJobs/>
+            <Footer/>
         </div>
-      </div>
     );
-  }
 }
-
-export default Portal;

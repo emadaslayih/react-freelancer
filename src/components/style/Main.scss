@@ -1,5 +1,11 @@
-body {
-    font-family: "Regular", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  } 
+@import "./variables";
+@import "./Navbar";
+@import "./Carousel";
+@import "./AsUsedBy";
+@import "./WorkDone";
+@import "./Features";
+@import "./CrowdFavourites";
+@import "./Categories";
+@import "./FreelancerCards";
+@import "./TopJobs";
+@import "./Footer";
