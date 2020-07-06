@@ -15,7 +15,7 @@ class carousel extends React.Component{
                 {
                     this.props.carouselImages.map((item,id)=>{
                         return (
-                        <div className="header">
+                        <div className="header" key={id}>
                             {item.captionTitle && <h1> {item.captionTitle} </h1>}
                             {item.captionDescription && <p>{item.captionDescription}</p>}
                             {item.hierBtn && <a className="one" href="/">{item.hierBtn}</a>}

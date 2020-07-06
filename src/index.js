@@ -21,11 +21,9 @@ const store= createStore(
 );
 
 ReactDOM.render(
-
     <Provider store={store}>
       <Portal/>   
-    </Provider> 
-,
+    </Provider>,
   document.getElementById("root")
 );
 
