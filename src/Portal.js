@@ -1,9 +1,15 @@
 import React from "react";
 
-export default (props) => {
-    return  (
-        <div id="portal">
-        	Portal  
+class Portal extends React.Component {
+  render() {
+    return (
+      <div className="container-fluid">
+        <div className="row">
+          <h1>Portal</h1>
         </div>
-    )   
+      </div>
+    );
+  }
 }
+
+export default Portal;

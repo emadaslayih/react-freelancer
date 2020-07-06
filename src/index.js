@@ -12,9 +12,9 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import "./components/style/Main.scss";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React>
     <Portal />    
-  </React.StrictMode>,
+  </React>,
   document.getElementById("root")
 );
 
