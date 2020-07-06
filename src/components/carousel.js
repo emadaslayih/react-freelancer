@@ -12,12 +12,18 @@ class carousel extends React.Component{
     render(){
         return (
             <div>
-                <div className="header">
-                <h1> Hire the best freelancers for any job, online. </h1>
-                <p>Millions of people use freelancer.com to turn their ideas into reality.</p>
-                <a className="one" href="/">Hier a Freelancer</a>
-                <a className="two" href="/">Earn money freelancing</a>
-                </div>
+                {
+                    this.props.carouselImages.map((item,id)=>{
+                        return (
+                        <div className="header">
+                            {item.captionTitle && <h1> {item.captionTitle} </h1>}
+                            {item.captionDescription && <p>{item.captionDescription}</p>}
+                            {item.hierBtn && <a className="one" href="/">{item.hierBtn}</a>}
+                            {item.earnBtn && <a className="two" href="/">{item.earnBtn}</a>}
+                        </div>
+                        )
+                    })
+                }
                 <Carousel fade="true" >
                 { 
                 this.props.carouselImages.map((item,id)=>{
