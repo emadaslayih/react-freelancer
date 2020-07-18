@@ -8,6 +8,7 @@ class AsUsedBy extends React.Component {
     componentDidMount(){
         this.props.fetchAsUsedBy();
     }
+    
     render(){
         return(
             <div className="container used-by px-0 mx-0">
