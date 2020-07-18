@@ -1,14 +1,13 @@
-# React-Core
+# react-Freelancer
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [React-Bootstrap Example](#react-bootstrap-example)
 * [Setup](#setup)
 
 
 ## General info
-This project was bootstrapped with [React-bootstrap](react-bootstrap.github.io/).
+This project is a [Freelancer](https://freelancer.com) interface simulator implementation, it was bootstrapped with [React-bootstrap](react-bootstrap.github.io/).
 
 
 ## Technologies
@@ -18,39 +17,11 @@ Project is created with:
 * [react-bootstrap](https://react-bootstrap.github.io) version: 1.0.1
 
 
-## React-Bootstrap Example
-
-```jsx
-import React from "react";
-import { Card, Button } from "react-boostrap";
-
-class Demo extends React.Component {
-  render(){
-    return
-    (
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="..." />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    );
-  }
-}
-
-export default Demo;
-```
-
 ## Setup
-To run this project, install it locally using npm:
+To run this project you need to clone the server that contains whole data [freelancer-server](https://github.com/mohamedMghazi/freelancer-server) and follow instructions that are placed [here](https://github.com/mohamedMghazi/freelancer-server/blob/master/README.md) then install project locally using these commands:
 
 ```
-$ cd ../react-core 
-$ npm install
-$ npm start
+$ cd ../react-freelancer
+$ yarn
+$ yarn start
 ```
